@@ -6,7 +6,7 @@ int arr_len = 0;//배열의 길이를 담는 변수
 int try_change = 0;//역순 작업을 몇번 할지 담는 변수
 int reverse_min = 0;//역순시 가장 왼쪽 바구니 번호
 int reverse_max = 0;//역순시 가장 오른쪽 바구니 번호
-void arr_len_and_try_change_input(arr_len, try_chage);//배열의 길이와 작업 횟수를 입력 받는 함수
+void arr_len_and_try_change_input(void);//배열의 길이와 작업 횟수를 입력 받는 함수
 void arr_reset(int[]);//배열 내 원소를 1,2,3...으로 초기화 시키는 함수
 void reverse_interval_input(void);//역 순 시킬 구간을 입력하는 함수
 void try_reverse(int[],int,int,int);//two point방식으로 구간 내 원소를 역순 시키는 함수
@@ -44,7 +44,7 @@ void output_arr(int arr[])
 
 int main(void)
 {arr_len_and_try_change_input();
-int* arr = malloc(sizeof(int) * arr_len);
+int* arr = (int *)malloc(sizeof(int) * arr_len);
 arr_reset(arr);
 
 for (int i = 0; i < try_change; i++)
