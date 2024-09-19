@@ -13,7 +13,7 @@
 
 
 int main(void)
-{
+{int arr_len = 0;
 
 
 
