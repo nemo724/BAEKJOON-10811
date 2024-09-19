@@ -8,7 +8,7 @@ int reverse_min = 0;
 int reverse_max = 0;
 void arr_len_and_try_change_input(arr_len, try_chage);
 void arr_reset(int[]);
-
+void reverse_interval(void);
 
 
 
@@ -20,6 +20,8 @@ void arr_reset(int arr[])
 {arr[i] = i + 1;}
 }
 
+void reverse_interval(void)
+{scanf_s("%d%d", &reverse_min, &reverse_max);}
 
 
 
@@ -29,7 +31,7 @@ int main(void)
 {arr_len_and_try_change_input();
 int* arr = malloc(sizeof(int) * arr_len);
 arr_reset(arr);
-
+reverse_interval();
 
 
 
