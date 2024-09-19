@@ -4,6 +4,8 @@
 
 int arr_len = 0;
 int try_change = 0;
+int reverse_min = 0;
+int reverse_max = 0;
 void arr_len_and_try_change_input(arr_len, try_chage);
 void arr_reset(int[]);
 
