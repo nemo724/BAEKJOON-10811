@@ -50,7 +50,7 @@ arr_reset(arr);
 for (int i = 0; i < try_change; i++)
 {reverse_interval_input();
 int element_count = (reverse_max - reverse_min) + 1;
-int real_reverse_min_arr_index = reverse_min - 1;
+int real_reverse_min_arr_index = reverse_min - 1;//배열은 0부터 시작하므로 입력 받은 구간에서 1을 빼야 실제 배열내 위치로 갈 수 있음
 int real_reverse_max_arr_index = reverse_max - 1;
 try_reverse(arr, element_count, real_reverse_min_arr_index, real_reverse_max_arr_index);}
 output_arr(arr);
