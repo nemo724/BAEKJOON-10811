@@ -34,6 +34,6 @@ arr_reset(arr);
 reverse_interval();
 int element_count = (reverse_max - reverse_min) + 1;
 int real_reverse_min_arr_index = reverse_min - 1;
-
+int real_reverse_max_arr_index = reverse_max - 1;
 
 }
