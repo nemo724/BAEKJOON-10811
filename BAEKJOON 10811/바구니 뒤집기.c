@@ -54,4 +54,5 @@ int real_reverse_min_arr_index = reverse_min - 1;//배열은 0부터 시작하�
 int real_reverse_max_arr_index = reverse_max - 1;
 try_reverse(arr, element_count, real_reverse_min_arr_index, real_reverse_max_arr_index);}
 output_arr(arr);
+free(arr);
 }
