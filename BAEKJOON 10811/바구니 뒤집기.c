@@ -33,7 +33,7 @@ int* arr = malloc(sizeof(int) * arr_len);
 arr_reset(arr);
 reverse_interval();
 int element_count = (reverse_max - reverse_min) + 1;
-
+int real_reverse_min_arr_index = reverse_min - 1;
 
 
 }
