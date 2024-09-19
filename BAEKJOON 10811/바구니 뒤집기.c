@@ -19,7 +19,8 @@ void arr_len_and_try_change_input(void)
 
 
 int main(void)
-{
+{arr_len_and_try_change_input();
+int* arr = malloc(sizeof(int) * arr_len);
 
 
 
